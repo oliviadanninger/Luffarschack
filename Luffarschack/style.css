@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+Mono&display=swap');
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    padding: 10px;
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #222222;
+}
+
+header {
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+p {
+    margin: 0;
+}
+
+span {
+    margin: 0 0 15px 5px;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #222222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:hover {
+    cursor: pointer;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+#symbols {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+#symbols article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#symbols article article {
+    background-color: #222222;
+    color: white;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+#circle svg {
+    padding: 3px;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.678);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay section {
+    min-width: 20vw;
+    padding: 2em 4em;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    border-radius: 2px;
+}
+
+#overlay article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay figure {
+    margin: 1em;
+}
+
+#overlay button {
+    background: rgb(0, 92, 0);
+    color: white;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+#overlay button:hover {
+    background-color: green;
+}
+
+#modal-start,
+#modal-win {
+    display: none;
+}
+
+#animation {
+    display: none;
+    position: absolute;
+    top: 16vh;
+    left: 17vw;
+    width: 20em;
+    z-index: 2;
+}
+
+@keyframes animation {
+    0% {
+        left: 0vw;
+        top: 0vh;
+        width: 10px;
+    }
+
+    100% {
+        top: 16vh;
+        left: 17vw;
+        width: 20em;
+    }
+}

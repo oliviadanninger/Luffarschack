@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="overlay">
+        <section id="modal-start">
+            <article>
+                <figure id="symbol-start"></figure>
+                <h2>börjar</h2>
+            </article>
+            <button id="start-btn">Starta spelet</button>
+        </section>
+
+        <section id="modal-win">
+            <article>
+                <h2>Grattis </h2>
+                <figure id="symbol-win"></figure>
+            </article>
+            <button id="play-again-btn">Spela igen</button>
+        </section>
+    </section>
+
+    <header>
+        <h1>LUFFARSCHACK</h1>
+
+        <section id="score">
+            <section id="symbols">
+                <article id="cross">
+                    <svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.12 10L15.65 13.53L13.53 15.65L10 12.12L6.46003 15.66L4.34003 13.54L7.88003 10L4.34003 6.46003L6.46003 4.34003L10 7.88003L13.54 4.35003L15.66 6.47003L12.12 10Z"
+                            fill="red"></path>
+                    </svg>
+                    <article>
+                        <p id="cross-score">0</p>
+                    </article>
+                </article>
+
+                <span>:</span>
+
+                <article id="circle">
+                    <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2C14.42 2 18 5.58 18 10C18 14.42 14.42 18 10 18C5.58 18 2 14.42 2 10C2 5.58 5.58 2 10 2ZM10 15C12.76 15 15 12.76 15 10C15 7.24 12.76 5 10 5C7.24 5 5 7.24 5 10C5 12.76 7.24 15 10 15Z"
+                            fill="blue" /></svg>
+                    <article>
+                        <p id="circle-score">0</p>
+                    </article>
+                </article>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section id="container"></section>
+
+        <img id="animation" src="img/Group 1.svg" alt="animation">
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
